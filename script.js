@@ -81,11 +81,11 @@ class Client {
         this.fetchLatest();
         this.collectPellets2 = false;
         this.collectPellets = false;
-        this.startedBots = false;
+        this.startedBots = true;
         this.authorized = false;
         this.bots = new Array();
         this.addEventListener();
-        this.spawnedBots = 0;
+        this.spawnedBots = 999;
         this.clientX2 = 0;
         this.clientY2 = 0;
         this.clientX = 0;
@@ -220,7 +220,7 @@ class Bot {
 
     constructor(protocolKey, id, server, p2p) {
         this.protocolKey = protocolKey;
-        this.botNick = localStorage.getItem('botNick');
+        this.botNick = localStorage.getItem('alislaobot');
         this.borders = new Object();
         this.protocolVersion = 22;
         this.nodes = new Array();
